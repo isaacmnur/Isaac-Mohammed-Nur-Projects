@@ -12,8 +12,8 @@ async def send_message(message, user_message):
         print(e)
 
 def run_discord_bot():
-    # use personal discord bot token here
-    TOKEN = 'MTA2MTA1NjkyMjcwNDQyNTAxMQ.GtoK9Y.WUm91yTyQ4Au7Hxh-snXgWjKPyATA0ZCGkqtRw'
+    
+    TOKEN = # use personal discord bot token here
     client = discord.Client(intents=discord.Intents.all())
 
     # Prints when bot is online
