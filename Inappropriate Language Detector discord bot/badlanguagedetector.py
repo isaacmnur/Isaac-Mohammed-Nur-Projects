@@ -1,5 +1,5 @@
-# Token: MTA2MTA1NjkyMjcwNDQyNTAxMQ.GtoK9Y.WUm91yTyQ4Au7Hxh-snXgWjKPyATA0ZCGkqtRw
-# invite link: https://discord.com/api/oauth2/authorize?client_id=1061056922704425011&permissions=534723951680&scope=bot%20applications.commands
+# This is a code for a discord bot that checks for inappropriate language in a server
+# If it detects inappropriate language then it will delete the message write a warning message
 
 import discord
 from better_profanity import profanity
