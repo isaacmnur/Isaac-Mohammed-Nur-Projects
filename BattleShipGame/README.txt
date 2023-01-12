@@ -1,4 +1,5 @@
 Game.java is the main file
+
 This is a battleship game that uses terminal inputs
 When you run Game.java it will ask if you want debug mode
 Debug mode prints the board out
