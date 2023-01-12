@@ -8,7 +8,6 @@ public class Board{
     private Boat[] boats;
     private int totalShots = 0;
     private int turns = 1;
-    private int[][] numOfHits;
 
     //constructor
     public Board() {
@@ -26,11 +25,6 @@ public class Board{
     
         boats = new Boat[1];
         boats[0] = new Boat(2, random.nextBoolean());
-        numOfHits = new int[2][2];
-
-        for(int i = 0; i < numOfHits.length; i++) {
-            numOfHits[i][0] = -1;
-        }
     }
 
     public void placeBoats() {
@@ -70,12 +64,6 @@ public class Board{
             }
             else if(gameBoard[x][y].getStatus() == 'B') {
                 gameBoard[x][y].setStatus('H');
-                for(int i = 0; i < numOfHits.length; i++) {
-                    if(numOfHits[i][0] == -1 && numOfHits[i][1] == -1) {
-                        numOfHits[i][0] = x;
-                        numOfHits[i][1] = y;
-                    }
-                }
                 System.out.println("Hit!");
             }
             else if(gameBoard[x][y].getStatus() == 'H') {
